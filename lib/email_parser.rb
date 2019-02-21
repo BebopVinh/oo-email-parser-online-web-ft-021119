@@ -6,8 +6,10 @@ require 'pry'
 
 class EmailParser
   attr_accessor :email
+  @@all = []
 
   def initialize(emails)
+    @@all = emails.split(/[,\s]/)
     binding.pry
   end
 
