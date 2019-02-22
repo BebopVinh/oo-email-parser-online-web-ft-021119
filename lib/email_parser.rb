@@ -17,4 +17,5 @@ class EmailParser
     @@all = @emails.split(/[,\s]/).reject!("").uniq!
   end
 
+
 end #end of Class
