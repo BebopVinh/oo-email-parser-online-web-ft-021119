@@ -14,8 +14,8 @@ class EmailParser
 
   def parse
     @@all = @emails.split(/[,\s]/)
-    binding.pry
     @@all.reject! {|email| email == ""}
+    binding.pry
   end
 
 
