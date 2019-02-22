@@ -12,8 +12,8 @@ class EmailParser
     @emails = emails
   end
 
-  def parse(emails)
-    @@all = @emails.split(/[,\s]/).reject!("").uniq!
+  def parse(emails = @emails)
+    @@all = emails.split(/[,\s]/).reject!("").uniq!
   end
 
 
