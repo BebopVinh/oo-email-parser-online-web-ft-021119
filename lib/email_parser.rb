@@ -5,16 +5,16 @@
 require 'pry'
 
 class EmailParser
-  attr_reader :email
+  attr_reader :emails
   @@all = []
 
   def initialize(emails)
-    @email = emails
+    @emails = emails
   end
 
   def parse
     binding.pry
-    @@all = @email.split(/[,\s]/).reject!("").uniq!
+    @@all = @emails.split(/[,\s]/).reject!("").uniq!
   end
 
 
