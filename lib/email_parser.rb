@@ -9,11 +9,11 @@ class EmailParser
   @@all = []
 
   def initialize(emails)
-    @@all = emails.split(/[,\s]/)
+    @email = emails
   end
 
   def parse
-    @@all
+    @@all = @emails.split(/[])
   end
 
 end #end of Class
