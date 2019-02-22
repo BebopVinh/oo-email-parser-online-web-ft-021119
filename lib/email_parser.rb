@@ -8,9 +8,9 @@ class EmailParser
   attr_reader :emails
   @@all = []
 
-  def initialize(emails)
-    @emails = emails
-  end
+  # def initialize(emails)
+  #   @emails = emails
+  # end
 
   def parse
     @@all = @emails.split(/[,\s]/).reject!("").uniq!
