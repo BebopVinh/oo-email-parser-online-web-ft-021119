@@ -13,7 +13,7 @@ class EmailParser
   end
 
   def parse
-    @@all.reject!("").uniq!
+    @@all
   end
 
 end #end of Class
